@@ -5,5 +5,5 @@ vRP = Proxy.getInterface("vRP")
 
 RegisterServerEvent('entorno:sendentorno')
 AddEventHandler('entorno:sendentorno', function(x,y,z,msg)
-     vRP.sendServiceAlert({nil, "police",x,y,z,msg})
+     vRP.sendServiceAlert({source,"police",x,y,z,msg}) -- DONDE DICE "police" cambiar por el nombre del trabajo
 end)
